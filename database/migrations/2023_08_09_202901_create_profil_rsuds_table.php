@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('profil_r_s_u_d_s', function (Blueprint $table) {
+        Schema::create('profil_rsud', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('profil_r_s_u_d_s');
+        Schema::dropIfExists('profil_rsud');
     }
 };
