@@ -9,5 +9,5 @@ class ProfilRSUD extends Model
 {
     use HasFactory;
     protected $guarded= ['id'];
-    protected $table= 'profil_rsud';
+    protected $table= 'org_profilrsud';
 }

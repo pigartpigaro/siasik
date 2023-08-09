@@ -9,5 +9,5 @@ class Pihak3 extends Model
 {
     use HasFactory;
     protected $guarded= ['id'];
-    protected $table= 'pihak_3';
+    protected $table= 'org_pihak3';
 }

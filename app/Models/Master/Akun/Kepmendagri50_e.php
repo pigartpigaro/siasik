@@ -9,5 +9,5 @@ class Kepmendagri50_e extends Model
 {
     use HasFactory;
     protected $guarded= ['id'];
-    protected $table= 'kepmendagri_50e';
+    protected $table= 'akun_kepmendagri50e';
 }

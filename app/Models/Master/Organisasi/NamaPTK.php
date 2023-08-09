@@ -9,5 +9,5 @@ class NamaPTK extends Model
 {
     use HasFactory;
     protected $guarded= ['id'];
-    protected $table= 'nama_ptk';
+    protected $table= 'org_ptk';
 }
