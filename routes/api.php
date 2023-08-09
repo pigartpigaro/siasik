@@ -10,7 +10,9 @@ use App\Http\Controllers\Master\Akun\Mirroring50Controller;
 use App\Http\Controllers\Master\Kegiatan\KegiatanBludController;
 use App\Http\Controllers\Master\Organisasi\OrganisasiBludController;
 use App\Helpers\Routes\RouteHelper;
+use App\Http\Controllers\Master\Organisasi\NamaPTKController;
 use App\Http\Controllers\Master\Organisasi\Pihak3Controller;
+use App\Http\Controllers\Master\Organisasi\ProfilRSUDController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -92,3 +94,15 @@ Route::get('/getpihak3',[Pihak3Controller::class,'getpihak3']);
 Route::post('/postpihak3',[Pihak3Controller::class,'postpihak3']);
 Route::post('/updatepihak3',[Pihak3Controller::class,'updatepihak3']);
 Route::post('/deletepihak3',[Pihak3Controller::class,'deletepihak3']);
+
+//NAMAPTK
+Route::get('/getptk',[NamaPTKController::class,'getptk']);
+Route::post('/postptk',[NamaPTKController::class,'postptk']);
+Route::post('/updateptk',[NamaPTKController::class,'updateptk']);
+Route::post('/deleteptk',[NamaPTKController::class,'deleteptk']);
+
+//PROFIL
+Route::get('/getprofil',[ProfilRSUDController::class,'getprofil']);
+Route::post('/postprofil',[ProfilRSUDController::class,'postprofil']);
+Route::post('/updateprofil',[ProfilRSUDController::class,'updateprofil']);
+Route::post('/deleteprofil',[ProfilRSUDController::class,'deleteprofil']);

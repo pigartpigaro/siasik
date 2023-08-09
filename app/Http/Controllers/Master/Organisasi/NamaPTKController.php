@@ -8,12 +8,12 @@ use Illuminate\Http\Request;
 
 class NamaPTKController extends Controller
 {
-    public function getorg(){
+    public function getptk(){
         $data=NamaPTK::get();
         return response()->json($data);
     }
 
-    public function postorg(Request $request){
+    public function postptk(Request $request){
         $data=NamaPTK::create([
             'nip'=> $request->nip,
             'nama'=> $request->nama,
@@ -26,7 +26,7 @@ class NamaPTKController extends Controller
 
         return response()->json($data);
     }
-    public function updateorg(Request $request){
+    public function updateptk(Request $request){
         $data=NamaPTK::find($request->id);
         if(!$data){
             return response()->json('NotValid',500);
@@ -44,7 +44,7 @@ class NamaPTKController extends Controller
         return response()->json('Success');
     }
 
-    public function deleteorg(Request $request){
+    public function deleteptk(Request $request){
         
         $data=NamaPTK::find($request->id);
         if(!$data){
